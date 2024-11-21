@@ -7,6 +7,8 @@
   <title>Marion Cole</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
 </head>
 <body>
   <header>
@@ -14,7 +16,7 @@
     <nav>
       <a href="#about">About</a>
       <a href="#projects">Projects</a>
-      <a href="#contact">Contact</a>
+      <a href="#contacts">Contact</a>
       <button onclick="toggleDarkMode()" id="darkModeToggle">
         <i class="fas fa-moon" id="moonIcon"></i>
       </button>
@@ -35,10 +37,7 @@
     <section id="projects">
       <div class="centered-box">
         <h2>Projects:</h2>
-
-        
         <div class="projects-container">
-          
           <div class="project">
             <h3><strong>Woodruff Project</strong></h3>
             <a target="_blank" href="https://Marion-png.github.io/Olivia.html">
@@ -47,8 +46,6 @@
               </div>
             </a>
           </div>
-
-          
           <div class="project">
             <h3>Fashion Blog</h3>
             <a target="_blank" href="https://Marion-png.github.io/fashionblog">
@@ -57,8 +54,6 @@
               </div>
             </a>
           </div>
-
-         
           <div class="project">
             <h3>Healthy Recipes</h3>
             <a target="_blank" href="https://Marion-png.github.io/healthyrecipes.html">
@@ -67,8 +62,6 @@
               </div>
             </a>
           </div>
-
-         
           <div class="project">
             <h3>Media Queries</h3>
             <a target="_blank" href="https://Marion-png.github.io/media.html">
@@ -81,42 +74,48 @@
       </div>
     </section>
 
-    
-    <div class="centered-box">
-      <div class="spotify-widget">
-        <h1><strong>My Faves:</strong></h1>
-        <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6muvwS2oGDG9bTEKzlFLEg?utm_source=generator"width="100%" height="352" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
-    </div>
-  </div>
-    
-    <section id="Hobbies">
+    <section id="hobbies">
       <div class="centered-box">
+        <h2>My Hobbies:</h2>
         <div class="hobby-container">
-        </div><h1>My Hobbies:</h1>
-          <img src="images/Gym.jpg" alt="Gym"> 
+          <img src="images/Gym.jpg" alt="Gym">
           <img src="images/Food.jpg" alt="Food">
-          <img src="images/PSITS.jpg" alt="Sports">  
+          <img src="images/PSITS.jpg" alt="Sports">
           <img src="images/Shirt.jpg" alt="Shirt">
           <img src="images/Shoes.jpg" alt="Shoes">
           <img src="images/Laptop.jpg" alt="Laptop">
         </div>
       </div>
     </section>
-
-    
-    <div class="contact-buttons">
-      <div class = "centered-box">
-      <h1><strong>Contact Me:</strong></h1>
-      <a href="https://www.facebook.com/justinemarion.cole" class="contact-fb"><strong>Facebook</strong></a>
-      <a href="https://www.linkedin.com/in/marion-cole-317776322/"class = "contact-linkedin"><strong>Linkedin</strong></a>
-      <a href="https://github.com/Marion-png" class="contact-github"><strong>GitHub</strong></a>
+<div class = "centered-box">
+    <div class="spotify-widget">
+      <h1><strong>My Playlist:</strong></h1>
+      <iframe style="border-radius:12px" src="https://open.spotify.com/embed/playlist/6muvwS2oGDG9bTEKzlFLEg?utm_source=generator" width="100%" height="352" frameBorder="0" allowfullscreen="" allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" loading="lazy"></iframe>
       </div>
+    </div>
   </div>
+  
+  <footer>
+
+    <h1>My Socials:</h1>
+    <div class="social-icons">
+      <a href="https://www.facebook.com/justinemarion.cole"  class="icon facebook">
+        <i class="fab fa-facebook-f"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/marion-cole-317776322/" class="icon linkedin">
+        <i class="fab fa-linkedin-in"></i>
+      </a>
+      <a href="https://github.com/Marion-png"  class="icon github">
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    
+  </footer>
+
   <script>
     function toggleDarkMode() {
       const body = document.body;
       body.classList.toggle('dark-mode');
-
       if (body.classList.contains('dark-mode')) {
         localStorage.setItem('theme', 'dark');
       } else {
@@ -131,9 +130,5 @@
       }
     };
   </script>
-
-  <footer>
-    <p> Nice </p>
-  </footer>
 </body>
 </html>
